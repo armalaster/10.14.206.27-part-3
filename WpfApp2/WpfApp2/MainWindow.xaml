@@ -11,6 +11,10 @@
             <ColumnDefinition Width="45*"/>
             <ColumnDefinition Width="754*"/>
         </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="667*"/>
+            <RowDefinition Height="33*"/>
+        </Grid.RowDefinitions>
         <TextBox x:Name="TextBoxVvodTexta" HorizontalAlignment="Left" Margin="18,18,0,0" TextWrapping="Wrap" Text="Введите для поиска" VerticalAlignment="Top" Width="409" Height="48" Grid.ColumnSpan="2" Background="#FFE6E6E6" FontSize="20" FontWeight="Normal" FontStyle="Normal" TextChanged="TextBox_TextChanged"/>
         <ComboBox x:Name="ComboBoxSortirovka" Grid.Column="1" HorizontalAlignment="Left" Margin="412,18,0,0" VerticalAlignment="Top" Width="158" Height="48" SelectionChanged="ComboBox_SelectionChanged">
 
@@ -22,8 +26,7 @@
         <Label Grid.Column="1" Content="Фильтрация" HorizontalAlignment="Left" Margin="590,20,0,0" VerticalAlignment="Top" Height="46" Width="125" FontSize="20"/>
         <StackPanel x:Name="People" Margin="0,90,-1,59" Grid.ColumnSpan="2"/>
 
-        <StackPanel x:Name="People1" Margin="-1,547,0,0" Grid.ColumnSpan="2">
-            </StackPanel>
+        <StackPanel x:Name="People1" Grid.ColumnSpan="2" Orientation="Horizontal" Margin="0,643,0,0" Grid.RowSpan="2"/>
 
     </Grid>
 </Window>
